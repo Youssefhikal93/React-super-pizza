@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+@import "tailwindcss";
+@layer components {
+  .input {
+    @apply w-full rounded-full border border-stone-200 bg-stone-50 p-2 text-sm transition-all duration-300 placeholder:text-stone-400 focus:ring focus:ring-amber-400 focus:outline-none md:px-3;
+  }
+}
+
+@theme {
+  /* --font-display: "Roboto", "sans-serif";
+  --font-roboto: "Roboto Mono, monospace";
+  --color-blood-1: oklch(0.4188 0.1603 16.28); */
+  /* --*: initial; */
+  --font-sans: "Roboto Mono", sans-serif;
+}
+
+/* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+.loader {
+  width: 45px;
+  aspect-ratio: 0.75;
+  --c: no-repeat linear-gradient(theme(colors.stone.700));
+  background:
+    var(--c) 0% 50%,
+    var(--c) 50% 50%,
+    var(--c) 100% 50%;
+  background-size: 20% 50%;
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  20% {
+    background-position:
+      0% 0%,
+      50% 50%,
+      100% 50%;
+  }
+  40% {
+    background-position:
+      0% 100%,
+      50% 0%,
+      100% 50%;
+  }
+  60% {
+    background-position:
+      0% 50%,
+      50% 100%,
+      100% 0%;
+  }
+  80% {
+    background-position:
+      0% 50%,
+      50% 50%,
+      100% 100%;
+  }
+}
