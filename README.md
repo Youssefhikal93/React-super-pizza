@@ -2,7 +2,7 @@
 
 A static pizza ordering layout application with tracking and interactive features.
 
-### [Live Demo](https://pizza-perfection.onrender.com/)
+### [Live Demo](https://super-pizza-co.netlify.app/)
 
 ## ✨ Features
 
